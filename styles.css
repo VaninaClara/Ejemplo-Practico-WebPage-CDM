@@ -97,8 +97,23 @@ h1 {
     font-weight: 700;
 }
 
-.cards h3 {
+.cards h2 {
     font-style: italic;
+}
+
+.phrase_one {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ebbb0f;
+    color: #FFF;
+    
+}
+
+.phrase_one h2 {
+  font-size: 40px;
+  text-align: center;
 }
 
 #gallery {
