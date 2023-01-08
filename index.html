@@ -86,54 +86,72 @@
       </div>
     </section>
     <section id="gallery">
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/la-concha.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa de la Concha, San Sebastián</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/ses-illetes.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa de Ses Illetes, Formentera</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/las-canteras.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa de Las Canteras, Las Palmas de Gran Canaria</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/maspalomas.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa de Maspalomas, Gran Canaria</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/el-cotillo.jpg" alt="" />
+        <div class="hidden">
+          <h4>Lagunas y Playa de El Cotillo, La Oliva, Fuerteventura</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/sotavento.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa de Sotavento, Costa Calma, Fuerteventura</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/del-duque.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa Del Duque, Costa Adeje, Tenerife</h4>
         </div>
-        <div class="img">
-            <img class="img_hover" src="" alt="">
-            <div class="hidden">
-                <h4></h4>
-            </div>
+      </div>
+      <div class="image">
+        <img class="img_hover" src="assets/images/cofete.jpg" alt="" />
+        <div class="hidden">
+          <h4>Playa de Cofete, Morro del Jable, Fuerteventura</h4>
         </div>
+      </div>
     </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(
+        function () {
+          $(".image").hover(function () {
+            $(this).find(".hidden").fadeIn();
+          }, function () {
+          $(this).find(".hidden").fadeOut();
+        });
+        }
+      );
+    </script>
   </body>
 </html>
