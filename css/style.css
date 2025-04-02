@@ -65,3 +65,20 @@ main {
   .navbar li a i {
     margin-right: 6px;
   }  
+
+  /* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
