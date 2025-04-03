@@ -58,6 +58,12 @@ main {
   font-family: Arial, sans-serif;
 }
 
+h1 {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
 .info-box {
   background-color: #f0f8ff;
   border: 1px solid #ccc;
@@ -110,3 +116,9 @@ main {
     width: 100%;
   }
 }
+.logo-cdm {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
