@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// main.js
 fetch("emergencia.html")
   .then(response => {
     if (!response.ok) {
@@ -15,16 +16,15 @@ fetch("emergencia.html")
     return response.text();
   })
   .then(data => {
-    const contenedor = document.getElementById("emergencia-container");
-    if (contenedor) {
-      contenedor.innerHTML = data;
+    const container = document.getElementById("emergencia-container");
+    if (container) {
+      container.innerHTML = data;
     } else {
       console.error("No se encontró el contenedor");
     }
   })
-  .catch(error => {
-    console.error("Error al cargar el componente:", error);
-  });
+  .catch(error => console.error("Error al cargar el componente:", error));
+
 
 
 
