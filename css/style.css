@@ -117,17 +117,21 @@ h1 {
   }
 }
 .logo-header {
-  text-align: center;
-  padding: 10px 0;
   background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo-header a {
+  display: inline-block;
 }
 
 .logo-header img {
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
-}
-.logo-header {
-  border-bottom: 1px solid #ccc;
+  display: block;
+  margin: 0 auto;
 }
 
 
