@@ -8,12 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 fetch("emergencia.html")
-  .then(response => response.text())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Archivo no encontrado");
+    }
+    return response.text();
+  })
   .then(data => {
-    document.getElementById("emergencia-container").innerHTML = data;
+    const contenedor = document.getElementById("emergencia-container");
+    if (contenedor) {
+      contenedor.innerHTML = data;
+    } else {
+      console.error("No se encontró el contenedor");
+    }
   })
   .catch(error => {
     console.error("Error al cargar el componente:", error);
   });
+
 
 
