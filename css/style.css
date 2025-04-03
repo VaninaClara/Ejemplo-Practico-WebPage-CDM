@@ -1,138 +1,112 @@
 
-/* NAVBAR */
+/* NAVBAR GENERAL */
 .navbar {
-    background-color: #004080;
-    padding: 10px 20px;
-  }
-  
-  .navbar ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .navbar li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar li a:hover {
-    background-color: #0066cc;
-  }
-  
-
-/* Estilo general del contenido principal */
-main {
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Estilo de cada bloque informativo */
-  .info-box {
-    background-color: #f0f8ff; /* azul muy claro */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  /* Títulos */
-  .info-box h2 {
-    color: #004080;
-    margin-bottom: 10px;
-  }
-  
-  /* Lista de consejos */
-  .info-box ul {
-    padding-left: 20px;
-  }
-  
-  .info-box li {
-    margin-bottom: 5px;
-  }
-  
-  .navbar li a i {
-    margin-right: 6px;
-  }  
-
-  /* Responsive para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .navbar li a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
+  background-color: #004080;
+  padding: 16px 20px;
+  position: relative;
+  min-height: 60px;
 }
 
-/* Responsive para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .navbar li a i {
-    font-size: 1rem;
-  }
-}
-.navbar ul {
-  padding: 20px 10px;
+/* Lista de navegación */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
+/* Estilo de los enlaces */
 .navbar li a {
-  padding: 12px 8px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-/* Ocultar botón en pantallas grandes */
+.navbar li a:hover {
+  background-color: #0066cc;
+}
+
+.navbar li a i {
+  margin-right: 6px;
+}
+
+/* Botón hamburguesa (oculto por defecto) */
 .menu-toggle {
   display: none;
   background: none;
   border: none;
   color: white;
-  font-size: 1.5rem;
-  padding: 10px;
+  font-size: 2rem;
   cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 1000;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .navbar {
-    position: relative;
-  }
+/* ESTILOS GENERALES DEL CONTENIDO */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
 
+.info-box {
+  background-color: #f0f8ff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.info-box ul {
+  padding-left: 20px;
+}
+
+.info-box li {
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE: Estilos móviles */
+@media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px; /* más espacio arriba */
+    right: 15px;
+    z-index: 1000;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     background-color: #004080;
-    padding: 10px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 50px;
   }
 
   .nav-links.show {
     display: flex;
   }
+
+  .nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
 }
-
-
-
-
