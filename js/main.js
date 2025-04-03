@@ -7,14 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('componentes/emergencia.html')
-    .then(response => response.text())
-    .then(data => {
-      const placeholder = document.getElementById('emergencia-placeholder');
-      if (placeholder) {
-        placeholder.innerHTML = data;
-      }
-    });
-});
+fetch("emergencia.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("emergencia-container").innerHTML = data;
+  })
+  .catch(error => {
+    console.error("Error al cargar el componente:", error);
+  });
+
 
